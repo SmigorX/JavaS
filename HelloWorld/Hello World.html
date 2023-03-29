@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First test at JS</title>
+</head>
+<body>
+
+    <h1 id="title1">Hello world</h1>
+    <h2 id="title2" >Hell-o world</h2>
+
+    <script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+    let a = 10;
+    const b = 20;
+    var info = "Hiya there, nya! " + a;     // better use let or const
+
+    console.log(info)   /* console logs will return to console*/
+
+    if (a < b && a === 11)  // || = or, && = and
+        {
+        console.log("Hello World 1")
+        }
+    else if (a === 10)
+        {
+        console.log("Hello World 2")
+        }
+    else
+        {
+        console.log("Hello World 3")
+        }
+
+    let abc = "Elo Aloha ABC";
+    console.log(abc.replace("Aloha", "Alo"));  /* This replaces Aloha with Alo */
+
+    let array = [1, "dwa", 3, "ry", 5, "six", 7, 8, 9, 10];
+    console.log(array)
+
+    document.getElementById("title1").innerHTML = a;    /* This changes the h1 to the value of variable a */
+
+    });
+    </script>
+
+</body>
+</html>
